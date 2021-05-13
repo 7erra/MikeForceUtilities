@@ -8,6 +8,6 @@ hemtt.exe
 ####
 *.exe
 include/*
-vn_mf_utils.VR/*
+vn_mf_utils.VR
 .vscode/*
 *.pbo
