@@ -6,5 +6,8 @@ keys/*
 .hemtt/local
 hemtt.exe
 ####
+*.exe
 include/*
 vn_mf_utils.VR/*
+.vscode/*
+*.pbo
