@@ -1,0 +1,19 @@
+name = "Mike Force Utilities"
+prefix = "TER_MFU"
+author = "Terra"
+mainprefix = "z"
+
+modname = "{{name}}"
+
+files = [
+	"CHANGELOG.md",
+	"LICENSE.md",
+	"CREDITS.txt"
+]
+include = [
+	"./include"
+]
+exclude = [
+	"*.png",
+	"*.xcf"
+]

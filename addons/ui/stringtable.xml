@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Any Name">
+    <Package name="UIs">
+        <Container name="RscDisplayWhitelistedArsenal">
+            <Key ID="STR_TAG_Yes">
+                <Original>yes</Original>
+            </Key>
+            <Key ID="STR_TAG_No">
+                <Original>no</Original>
+            </Key>
+            <Key ID="STR_TER_MFU_RscDisplayWhitelistedArsenal_test">
+                <Original>Test Change</Original>
+            </Key>
+        </Container>
+    </Package>
+</Project>

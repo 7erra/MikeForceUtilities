@@ -1,0 +1,10 @@
+
+## Added by HEMTT
+releases/*
+*.biprivatekey
+keys/*
+.hemtt/local
+hemtt.exe
+####
+include/*
+vn_mf_utils.VR/*

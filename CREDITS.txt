@@ -1,0 +1,7 @@
+Author:
+- Terra
+
+Images:
+- "Clipboard Icon" by alvianwijaya from the Noun Project
+
+Built with hemtt https://github.com/BrettMayson/HEMTT
