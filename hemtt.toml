@@ -8,6 +8,7 @@ modname = "{{name}}"
 files = [
 	"CHANGELOG.md",
 	"LICENSE.md",
+	"README.md",
 	"CREDITS.txt"
 ]
 include = [
