@@ -233,11 +233,6 @@ switch _mode do {
 			"Select Weapon"
 		] call BIS_fnc_configViewer;
 		_cfgSelected params [["_cfgSelected", configNull]];
-		diag_log [
-			["CfgVehicles", "CfgMagazines", "CfgGlasses"] apply {
-				isClass(configFile >> _x >> configName _cfgSelected)
-			}
-		];
 		if (
 			(["CfgVehicles", "CfgMagazines", "CfgGlasses"] apply {
 				isClass(configFile >> _x >> configName _cfgSelected)
