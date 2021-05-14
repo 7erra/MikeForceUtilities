@@ -3,7 +3,7 @@
 **Mike Force Utilities** is a mod for [Arma 3](https://arma3.com/). It provides tools for modders of the [Mike Force mission](https://github.com/Savage-Game-Design/Mike-Force) made by SGD as part of their [S.O.G. Prairie Fire](https://www.sogpf.com/) CDLC.
 
 ## Installation
-The mod can be installed via the Steam Workshop.
+The mod can be installed via the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2486631777).
 
 ## Usage
 ### Whitelisted Arsenal Editor (WAE)
@@ -25,7 +25,7 @@ The [Whitelisted Arsenal](https://wiki.sogpf.com/index.php/Whitelisted_Arsenal) 
 - Close: Does what it says. Progress that is not saved to the clipboard is lost!
 
 ## Contributing
-You are very welcome to contribute! You don't have to provide code, ideas are also very valuable.
+You are very welcome to contribute! You don't have to provide code, ideas are also very valuable. Open an issue on [GitHub](https://github.com/7erra/MikeForceUtilities/issues) or leave a comment on the [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=2486631777).
 
 ## License
 The license can be found [here](LICENSE.md).<br/>
