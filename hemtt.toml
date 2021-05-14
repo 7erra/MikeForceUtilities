@@ -9,7 +9,9 @@ files = [
 	"CHANGELOG.md",
 	"LICENSE.md",
 	"README.md",
-	"CREDITS.txt"
+	"CREDITS.txt",
+	"mod.cpp",
+	"logo_co.paa"
 ]
 include = [
 	"./include"
