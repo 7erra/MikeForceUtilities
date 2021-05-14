@@ -234,7 +234,7 @@ switch _mode do {
 		] call BIS_fnc_configViewer;
 		_cfgSelected params [["_cfgSelected", configNull]];
 		if (
-			(["CfgVehicles", "CfgMagazines", "CfgGlasses"] apply {
+			(["CfgVehicles", "CfgWeapons", "CfgMagazines", "CfgGlasses"] apply {
 				isClass(configFile >> _x >> configName _cfgSelected)
 			}) findIf {_x} == -1
 		) exitWith {
