@@ -17,7 +17,7 @@
 #include "\a3\3den\UI\resincl.inc"
 #include "\a3\3den\UI\macros.inc"
 
-#define UI_SCRIPT(NAME) NAME_script
+#define UI_SCRIPT(NAME) NAME##_script
 #ifdef DEBUG_MODE_FULL
     #define INIT_DISPLAY(NAME,PATH) \
         onLoad = ["onLoad",_this,#NAME,'##PATH##'] call compile preprocessfilelinenumbers QUOTE(z\TER_MFU\addons\ui\scripts\NAME.sqf); \
