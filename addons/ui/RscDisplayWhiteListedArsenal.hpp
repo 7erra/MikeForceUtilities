@@ -110,11 +110,10 @@ class ctrlWhitelistedArsenalItemGroup: ctrlControlsGroupNoScrollbars
 		};
 	};
 };
-class RscDisplayWhiteListedArsenal
+class RscDisplayWhitelistedArsenal
 {
 	idd = IDD_RSCDISPLAYWHITELISTEDARSENAL;
-	INIT_DISPLAY(RscDisplayWhiteListedArsenal,TER_MFU)
-	script = UI_SCRIPT(RscDisplayWhiteListedArsenal);
+	INIT_DISPLAY(RscDisplayWhitelistedArsenal,TER_MFU)
 	class ControlsBackground
 	{
 		class BackgroundDisable: ctrlStaticBackgroundDisable {};
