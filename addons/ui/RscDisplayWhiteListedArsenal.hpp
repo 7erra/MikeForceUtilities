@@ -1,9 +1,3 @@
-#define CT_CONTROLS_TABLE 19
-
-#define W_DISPLAY 140
-#define H_DISPLAY (WINDOW_HAbs - 15 * GRID_H)
-#define X_DISPLAY CENTER_X - 0.5 * W_DISPLAY * GRID_W
-#define Y_DISPLAY CENTER_Y - 0.5 * WINDOW_HAbs + 10 * GRID_H
 #define _W_CLASSNAME 32
 #define _W_COMBO (0.25 * (W_DISPLAY - 2 - 44))
 class ctrlWhitelistedArsenalItemGroup: ctrlControlsGroupNoScrollbars
