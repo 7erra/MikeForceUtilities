@@ -63,3 +63,33 @@ class ctrlControlsTable
 	{
 	};
 };
+class ctrlGroupLog: ctrlControlsGroup
+{
+	idc = IDC_TERMFU_GROUPLOG;
+	x = X_DISPLAY + 1 * GRID_W;
+	y = Y_DISPLAY + H_DISPLAY - 17 * GRID_H;
+	w = (W_DISPLAY - 2) * GRID_W;
+	h = 10 * GRID_H;
+	class Controls
+	{
+		class Log: ctrlStructuredText
+		{
+			idc = IDC_TERMFU_GROUPLOG_LOG;
+			text = "--- Start of log ---";
+			x = 0;
+			y = 0;
+			w = (W_DISPLAY - 4) * GRID_W;
+			h = 10 * GRID_H;
+			colorBackground[] = {0.1,0.1,0.1,1};
+			class Attributes
+			{
+				font = "EtelkaMonospacePro";
+				color = "#ffffff";
+				colorLink = "#D09B43";
+				align = "left";
+				shadow = 1;
+				size = 0.7;
+			};
+		};
+	};
+};
