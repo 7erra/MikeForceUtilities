@@ -26,9 +26,10 @@
 #endif
 
 #define COLOR_DEBUG {1,0,0,0.2}
-#define ICON(NAME) QUOTE(\z\TER_MFU\addons\ui\data\NAME)
 #ifdef DEBUG_MODE_FULL
     #define ICON(NAME) QUOTE(P:\MikeForceUtilities\addons\ui\data\NAME)
+#else
+    #define ICON(NAME) QUOTE(\z\TER_MFU\addons\ui\data\NAME)
 #endif
 
 //--- IDDs and IDCs

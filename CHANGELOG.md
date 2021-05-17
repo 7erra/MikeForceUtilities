@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2021-05-17
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+- Missing texture p:\mikeforceutilities\addons\ui\data\clipboard_ca.paa (issue #3)
+
+
 ## [1.0.0] - 2021-05-14
 ### Added
 - RELEASE
