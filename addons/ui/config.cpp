@@ -12,6 +12,10 @@ class CfgPatches {
     };
 };
 
+#include "CfgFunctions.hpp"
+
 #include "CfgScriptPaths.hpp"
 #include "RscControls.hpp"
+#include "ctrlHashmapViewer.hpp"
 #include "RscDisplayWhiteListedArsenal.hpp"
+#include "RscDisplayVehicleRespawnInfo.hpp"
