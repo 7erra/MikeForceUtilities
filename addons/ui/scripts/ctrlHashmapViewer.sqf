@@ -4,6 +4,7 @@ params ["_mode", "_params"];
 switch _mode do {
 	case "onLoad":{
 		_params params ["_ctrlHashmapViewer"];
+		_display = ctrlParent _ctrlHashmapViewer;
 		_ctrlOk = _ctrlHashmapViewer controlsGroupCtrl IDC_CTRLHASHMAPVIEWER_OK;
 		_ctrlOk ctrlAddEventHandler ["ButtonClick",{
 			with uiNamespace do {["OK", _this] call SELF;};
@@ -14,6 +15,9 @@ switch _mode do {
 		}];
 		_ctrlTitleDummy = _ctrlHashmapViewer controlsGroupCtrl IDC_CTRLHASHMAPVIEWER_TITLEDUMMY;
 		[_ctrlTitleDummy] call (missionnamespace getVariable "TER_MFU_fnc_makeCtrlGroupMoveable");
+		_display displayAddEventHandler ["KeyDown",{
+			with uiNamespace do {["KeyDown", _this] call SELF;};
+		}];
 	};
 	case "OK":{
 		_params params ["_ctrlOk"];
@@ -26,9 +30,8 @@ switch _mode do {
 			_path pushBack _x;
 			_ctrlHashmap tvData _path
 		};
-		diag_log [_keys];
 		_ctrlHashmapViewer setVariable ["_return", _keys];
-		//_ctrlHashmapViewer ctrlShow false;
+		_ctrlHashmapViewer ctrlShow false;
 	};
 	case "Cancel":{
 		_params params ["_ctrlCancel"];
@@ -59,6 +62,17 @@ switch _mode do {
 				["AddItem", [_ctrlHashmapViewer, [_x, _y], _newPath]] call SELF;
 			} forEach _value;
 		};
+	};
+	case "KeyDown":{
+		_params params ["_display", "_key"];
+		diag_log _this;
+		_ctrlHashmapViewer = _display displayCtrl IDC_CTRLHASHMAPVIEWER;
+		if (_key == DIK_ESCAPE && ctrlShown _ctrlHashmapViewer) exitWith {
+			//--- Override default behaviour, don't close display
+			["Cancel", [_ctrlHashmapViewer controlsGroupCtrl IDC_CTRLHASHMAPVIEWER_CANCEL]] call SELF;
+			true
+		};
+		false
 	};
 	case "onUnload":{
 		_params params ["_ctrlHashmapViewer", "_exitCode"];
