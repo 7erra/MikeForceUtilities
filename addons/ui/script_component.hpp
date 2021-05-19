@@ -14,6 +14,7 @@
 #include "\z\TER_MFU\addons\main\script_macros.hpp"
 #include "\z\TER_MFU\addons\main\script_macros_common.hpp"
 
+#include "\a3\3den\UI\dikCodes.inc"
 #include "\a3\3den\UI\resincl.inc"
 #include "\a3\3den\UI\macros.inc"
 //--- Additional positions:
