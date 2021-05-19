@@ -1,4 +1,4 @@
-#define _H_HASHMAPVIEWER 50
+#define _H_HASHMAPVIEWER 100
 #define _W_HASHMAPVIEWER (W_DISPLAY - 2)
 class ctrlHashmapViewer: ctrlControlsGroupNoScrollbars
 {
@@ -26,7 +26,6 @@ class ctrlHashmapViewer: ctrlControlsGroupNoScrollbars
 			y = 0;
 			w = _W_HASHMAPVIEWER * GRID_W;
 			h = 5 * GRID_H;
-			delete colorBackground;
 		};
 		class Edge: ctrlStaticBackground
 		{
