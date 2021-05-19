@@ -23,6 +23,9 @@
 */
 #include "script_component.hpp"
 params ["_display", "_message", ["_level", "INFO"]];
+if (isNull _display) exitWith {
+	["Display is null!"] call BIS_fnc_error;
+};
 private _ctrlGroupLog = _display displayCtrl IDC_TERMFU_GROUPLOG;
 private _ctrlLog = _ctrlGroupLog controlsGroupCtrl IDC_TERMFU_GROUPLOG_LOG;
 private _metaParams = switch toUpper _level do {
