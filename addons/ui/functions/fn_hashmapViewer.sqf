@@ -40,6 +40,5 @@ with uiNamespace do {
 	isNil {["Load", [_ctrlHashmapViewer, _hashmap]] call UI_SCRIPT(ctrlHashmapViewer)};
 };
 if (!_waitForReturn) exitWith {nil};
-#define RETURN _ctrlHashmapViewer getVariable "_return"
-waitUntil {!isNil {RETURN} || isNull _ctrlHashmapViewer};
-RETURN
+waitUntil {!ctrlShown _ctrlHashmapViewer || isNull _ctrlHashmapViewer};
+_ctrlHashmapViewer getVariable ["_return", []]
